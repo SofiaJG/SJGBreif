@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>SJG Breif</title>
+    <<link rel="stylesheet" href="CSS/stylesheet.css">
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1 id="title" class="text-center">Design Breif</h1>
+        <p id="description" class="description text-center">
+          designed and coded by SJG design
+        </p>
+      </header>
+      <form id="survey-form">
+        <div class="form-group">
+          <label id="name-label" for="name">Nombre</label>
+          <input
+            type="text"
+            name="name"
+            id="name"
+            class="form-control"
+            placeholder="Tu nombre y/o nombre de la marca"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label id="email-label" for="email">Email</label>
+          <input
+            type="email"
+            name="email"
+            id="email"
+            class="form-control"
+            placeholder="Mail de contacto"
+            required
+          />
+        </div>
+         <div class="form-group">
+          <p>
+            ¿Qué tipo de diseño necesitas?
+            <span class="clue">(Selecciona las que necesites)</span>
+          </p>
+
+          <label
+            ><input
+              name="prefer"
+              value="pagina-web"
+              type="checkbox"
+              class="input-checkbox"
+            />Diseño de página web</label
+          >
+          <label>
+            <input
+              name="prefer"
+              value="diseño-rrs"
+              type="checkbox"
+              class="input-checkbox"
+            />Diseño para redes sociales</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="animacion"
+              type="checkbox"
+              class="input-checkbox"
+            />Animación</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="identidad"
+              type="checkbox"
+              class="input-checkbox"
+            />Intentidad empresarial</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="logo"
+              type="checkbox"
+              class="input-checkbox"
+            />Logotipo</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="ppt"
+              type="checkbox"
+              class="input-checkbox"
+            />Presentación</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="render"
+              type="checkbox"
+              class="input-checkbox"
+            />Render 3d</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="mailing"
+              type="checkbox"
+              class="input-checkbox"
+            />Mailing</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="impreso"
+              type="checkbox"
+              class="input-checkbox"
+            />Impreso (lonas, invitaciones, stickers, etc.)</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="papeleria"
+              type="checkbox"
+              class="input-checkbox"
+            />Papelería (tarjetas de presentación, hoja membretada, playeras, etc.)</label
+          >
+          <label
+            ><input
+              name="prefer"
+              value="otro"
+              type="checkbox"
+              class="input-checkbox"
+            />Otro</label
+          >
+        </div>
+
+        <div class="form-group">
+          <p>¿Cuentas con un diseño previo?</p>
+          <select id="dropdown" name="role" class="form-control" required>
+            <option disabled selected value>Selecciona</option>
+            <option value="si">Web</option>
+            <option value="no">Identidad gráfica</option>
+            <option value="ideo">Sólo referencias</option>
+          </select>
+        </div>
+    <div class="form-group">
+          <label id="number-label" for="number"
+            > ¿Cuántas versiones de este diseño requieres? <span class="clue"></span></label
+          >
+          <input
+            type="number"
+            name="age"
+            id="number"
+            min="10"
+            max="99"
+            class="form-control"
+            placeholder="Número de versiones"
+          />
+        </div>
+
+        <div class="form-group">
+          <p>¿En cuánto tiempo necesitas el diseño?</p>
+          <label>
+            <input
+              name="user-deadline"
+              value="ASAP"
+              type="radio"
+              class="input-radio"
+              checked
+            />Urgente, máximo 3 días laborales</label
+          >
+          <label>
+            <input
+              name="user-recommend"
+              value="semana"
+              type="radio"
+              class="input-radio"
+            />1 a 2 semanas</label
+          >
+
+          <label
+            ><input
+              name="user-recommend"
+              value="Extendido"
+              type="radio"
+              class="input-radio"
+            />3 semanas en adelante</label
+          >
+        </div>
+
+
+        <div class="form-group">
+          <p>Escribe más sobre lo que necesitas</p>
+          <textarea
+            id="comments"
+            class="input-textarea"
+            name="comment"
+            placeholder="Me gustaría que mi diseño fuera..."
+          ></textarea>
+        </div>
+
+        <div class="form-group">
+          <button type="submit" id="submit" class="submit-button">
+            Enviar
+          </button>
+        </div>
+      </form>
+    </div>
+
+  </body>
+</html>
